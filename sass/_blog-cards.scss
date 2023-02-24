@@ -6,7 +6,7 @@
 	border-radius: 10px;
 	display: block;
 	padding: 0.2rem 1rem;
-	margin-bottom: 1.25rem;
+	margin-bottom: 1rem;
 	flex-direction: column;
 	position: relative;
 
@@ -14,17 +14,6 @@
 		transform: scale(1.05);
 	}
 
-}
-
-// modified from https://codepen.io/MartijnCuppens/pen/YavXJQ under MIT license
-.stretched-link::after {
-	position: absolute;
-	top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-	z-index: 1;
-	content: "";
 }
 
 .top-card-row {
@@ -39,7 +28,7 @@
 	}
 
 	span {
-		padding-top: 0.4rem;
+		padding-top: 0.2rem;
 	}
 }
 
