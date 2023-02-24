@@ -3,7 +3,7 @@ title = "Team"
 template="team.html"
 +++
 
-## Alice "IvyLashes" Cecile
+<h2> Alice "IvyLashes" Cecile </h2>
 
 **Class:** Ecologist / Mathematician / Entrepreneur / Programmer / Game Designer
 
@@ -21,7 +21,7 @@ template="team.html"
 
 **Email:** [alice@leafwing-studios.com](mailto:alice@leafwing-studios.com)
 
-## Rose "sixfold" Peck
+<h2> Rose "sixfold" Peck </h2>
 
 **Class:** Software Developer / Entrepreneur / Game Designer
 

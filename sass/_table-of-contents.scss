@@ -1,9 +1,9 @@
 @import "_colors.scss";
 
 .toc {
-	max-width: 18rem;
-	min-width: 16.4rem;
-	margin-left: 0.3rem;
+	margin-left: 0;
+	width: 15rem;
+	min-width: 15rem;
 }
 
 .toc-sticky {
@@ -11,40 +11,53 @@
 	border-top: 14px solid var( --primary-color);
 	background-color: var( --box-color);
 	position: sticky;
-	top: 1.5rem;  
+	top: 1.4rem;  
 	// Ensure that there's space between TOC and text body
 	margin: 0 1rem 0 0.2rem;
-	padding: 0.9rem 1rem 0.13rem;
+	padding: 0.9rem 0.9rem;
 	overflow: auto;
 }
 
-.toc-item {
-	margin-bottom: 6px;
+.toc-item,
+.toc-item-child{
+	position: relative;
+	border-radius: 0.2rem;
+	padding: 0.25rem;
 
 	a {
-		font-size: 16px;
+		&.active,
+		&:hover {
+			color: var( --primary-color);
+			&::before {
+				position: absolute;
+				top: 0;
+				right: 0;
+				left: 0;
+				bottom: 0;
+				z-index: -1;
+				background-color: var(--hover-box-color);
+				content: "";
+			}
+		}
+	}
+}
+
+.toc-item {
+
+	a {
+		font-size: 1rem;
 	}
 }
 
 .toc-item-child {
-	margin-left: 10px;
-	margin-bottom: 8px;
-
 	a {
-		font-size: 14px;
+		margin-left: 0.6rem;
+		font-size: 0.9rem;
+		&.active,
+		&:hover {
+			&::before {
+				left: 0.5rem;
+			}
+		}
 	}
-}
-
-.toc-item a,
-.toc-item-child a {
-	color: var( --text-on-secondary-color);
-
-	&:hover {
-		color: var( --hovered-text-on-secondary-color);
-	}
-}
-
-.toc-item a.active,
-.toc-item-child a.active {
-	color: var( --toc-highlight-text-color);
 }
