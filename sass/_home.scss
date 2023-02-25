@@ -9,15 +9,19 @@
 }
 
 .home-image {
-	max-width: 27rem;
+	img {
+		max-width: 25rem;
+		max-height: 35.375rem;
+	}
+
 }
+
+// @media screen and (min-width: 1280px) {
+	
+// }
 
 @media screen and (max-width: 768px) {
 	.home-columns {
 		flex-wrap: wrap;
-	}
-
-	.home-image {
-		max-width: 100%;
 	}
 }
